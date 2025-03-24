@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import Link from "next/link";
+import getConfig from "next/config";
 
 interface CardProps {
     className: string;
@@ -12,14 +13,16 @@ interface CardProps {
 
 export function CardCantado ({ className, ...props }: CardProps) {
     
-    const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;
+    const { publicRuntimeConfig } = getConfig();
+    const apiUrl = publicRuntimeConfig.imagePath;
 
     const contados = [
         {id:0, log:`${apiUrl}/icons8-github-100.svg`, name:"GitHub", url:"https://github.com/tyn1t", target:"_blank"},
         {id:1, log:`${apiUrl}/whatsapp.png`, name:"WhatsApp", url:"tel:+5592992192528"},
         {id:2, log:`${apiUrl}/gmail.png`, name:"Mail", url:"#"},
     ]
-
+    
+    console.log()
     return (
         <div id="contado">
         <Card className={cn("w-36 md:w-40 lg:w-44", className)} {...props}>
