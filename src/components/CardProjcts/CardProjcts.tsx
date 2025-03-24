@@ -28,8 +28,7 @@ export function CardProjcts({ className}: CardProdutoProps)  {
                         <Image 
                         src={"/perfil/pets.png"}
                         alt="Landing Page de Pet Shop"
-                        width={200}
-                        height={100}
+                        fill
                         className="object-cover"
                         />
                     </div>
