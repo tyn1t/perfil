@@ -14,9 +14,9 @@ export function CardCantado ({ className, ...props }: CardProps) {
     
 
     const contados = [
-        {id:0, log:"/perfil/icons8-github-100.svg", name:"GitHub", url:"https://github.com/tyn1t", target:"_blank"},
-        {id:1, log:"/perfil/whatsapp.png", name:"WhatsApp", url:"tel:+5592992192528"},
-        {id:2, log:"/perfil/gmail.png", name:"Mail", url:"#"},
+        {id:0, log:"/icons8-github-100.svg", name:"GitHub", url:"https://github.com/tyn1t", target:"_blank"},
+        {id:1, log:"/whatsapp.png", name:"WhatsApp", url:"tel:+5592992192528"},
+        {id:2, log:"/gmail.png", name:"Mail", url:"#"},
     ]
     
     console.log()
