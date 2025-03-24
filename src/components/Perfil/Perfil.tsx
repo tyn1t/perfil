@@ -9,7 +9,7 @@ export function Perfil () {
                 <div className="absolute  rounded-l-full md:w-1/2 md:h-60 bg-amber-300"></div>
                 <div className="relative  md:right-10 w-64  h-56 -z-30 md:z-0 rounded-full  overflow-hidden">
                     <Image 
-                        src={`${apiUrl}circle-user-solid.svg`}
+                        src={`${apiUrl}/circle-user-solid.svg`}
                         alt="Foto de Perfil"
                         fill
                         className="object-contain"
