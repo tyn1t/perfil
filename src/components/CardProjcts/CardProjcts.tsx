@@ -10,10 +10,6 @@ interface CardProdutoProps {
 
 export function CardProjcts({ className}: CardProdutoProps)  {
     
-    const imgPath = process.env.NEXT_PUBLIC_IMAGE_PATH
-    
-    console.log(imgPath)
-    
     return (
         <div  id="projeto"  className={`md:border md:border-amber-500 md:p-6 ${className || ""}`}>
         
