@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   icons: ["/perfil/circle-user-solid.svg"]
 }
 
-const apiUrl = process.env.PUBLIC;
+const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;;
 
 
 export default function Home() {

@@ -13,7 +13,7 @@ interface CardProps {
     className: string;
 }
 
-const apiUrl = process.env.PUBLIC;
+const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;;
 
 const logos = [
     {id:0, name:"Javascript", src:`${apiUrl}/java-script.png`,},
