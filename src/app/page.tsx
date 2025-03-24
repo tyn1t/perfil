@@ -11,7 +11,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: 'Perfil',
   description: 'Confira o perfil completo de um currículo, destacando habilidades, experiências e competências profissionais essenciais para a construção de uma carreira de sucesso.',
-  icons: ["/circle-user-solid.svg"]
+  icons: ["/perfil/circle-user-solid.svg"]
 }
 
 const apiUrl = process.env.PUBLIC;
