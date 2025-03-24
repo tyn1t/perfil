@@ -8,9 +8,9 @@ const nextConfig: import('next').NextConfig = {
     domains: ["tyn1t.github.io"],
     unoptimized: true,
   },
-  publicRuntimeConfig : {
-    imagePath: process.env.NEXT_PUBLIC_IMAGE_PATH || "/perfil",
-  }
+  // publicRuntimeConfig : {
+  //   imagePath: process.env.NEXT_PUBLIC_IMAGE_PATH || "/perfil",
+  // }
 };
 
 
