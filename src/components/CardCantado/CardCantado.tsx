@@ -22,7 +22,7 @@ export function CardCantado ({ className, ...props }: CardProps) {
 
     return (
         <div id="contado">
-        <Card className={cn("w-36 md:w-40", className)} {...props}>
+        <Card className={cn("w-36 md:w-40 lg:w-44", className)} {...props}>
             <CardHeader >
                 <CardTitle>
                     Contado

@@ -26,7 +26,7 @@ export function CardDetalhes ({ className, ...props }: CardProps) {
 
 
     return (
-        <Card className={cn("w-36 md:w-40", className)} {...props}>
+        <Card className={cn("w-36 md:w-40 lg:w-44", className)} {...props}>
             <CardHeader>
                 <CardTitle>Habilidades </CardTitle>
             </CardHeader>
