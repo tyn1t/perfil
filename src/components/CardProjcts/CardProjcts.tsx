@@ -26,7 +26,7 @@ export function CardProjcts({ className}: CardProdutoProps)  {
                     </h1>
                     <div className="relative w-32 h-40 mx-auto">
                         <Image 
-                        src={"/perfil/pets.png"}
+                        src={"/perfil/dog-3431913_640.jpg"}
                         alt="Landing Page de Pet Shop"
                         fill
                         className="object-cover"
