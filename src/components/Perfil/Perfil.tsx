@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-// const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;;
 
 export function Perfil () {
 
