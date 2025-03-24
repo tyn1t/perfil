@@ -14,7 +14,12 @@ export const metadata: Metadata = {
   icons: ["/circle-user-solid.svg"]
 }
 
+const apiUrl = process.env.PUBLIC;
+
+
 export default function Home() {
+  
+
   return (
     <>
       <main className="flex flex-col  md:flex-row  md:mx-10 lg:mx-3   min-h-screen overflow-hidden">
@@ -23,7 +28,7 @@ export default function Home() {
             lg:top-96
           ">
             <Image
-                src={"/arrow-right-solid.svg"}
+                src={`${apiUrl}/arrow-right-solid.svg`}
                 alt="arrow-right-solid"
                 width={50}
                 height={10}
@@ -32,7 +37,7 @@ export default function Home() {
           </div>
           <div className="relative z-30 right-1 top-96 mt-40 lg:top-72 h-16 w-16 rounded-full bg-blue-300 lg:bg-amber-100 ">
             <Image
-                src={"/arrow-right-solid.svg"}
+                src={`${apiUrl}/arrow-right-solid.svg`}
                 alt="arrow-right-solid"
                 width={50}
                 height={10}
