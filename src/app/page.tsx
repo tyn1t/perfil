@@ -6,6 +6,7 @@ import { Perfil } from "@/components/Perfil/Perfil";
 import { Row } from "@/components/Row/Row";
 import Image from "next/image";
 import { Metadata } from "next";
+import getConfig from "next/config";
 
 
 export const metadata: Metadata = {
@@ -14,11 +15,12 @@ export const metadata: Metadata = {
   icons: ["/perfil/circle-user-solid.svg"]
 }
 
-const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;;
 
 
 export default function Home() {
   
+  const { publicRuntimeConfig } = getConfig();
+  const apiUrl = publicRuntimeConfig.imagePath;
 
   return (
     <>

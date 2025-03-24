@@ -1,8 +1,13 @@
+import getConfig from "next/config";
 import Image from "next/image"
 
-const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;;
+// const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;;
 
 export function Perfil () {
+
+    const { publicRuntimeConfig } = getConfig();
+    const apiUrl = publicRuntimeConfig.imagePath;
+    
     return (
         <section id="sobre" className="flex flex-col md:not-first-of-type:mx-2 max-w-screen-lg my-4 md:my-10  ">
             <div className="flex items-center rounded-l-full -top-2 md:top-0">

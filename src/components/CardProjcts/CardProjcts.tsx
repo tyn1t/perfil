@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import getConfig from "next/config";
 
 
 interface CardProdutoProps {
@@ -7,10 +8,12 @@ interface CardProdutoProps {
 }
 
 
+
 export function CardProjcts({ className}: CardProdutoProps)  {
 
-    const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH; 
-    
+    const { publicRuntimeConfig } = getConfig();
+    const apiUrl = publicRuntimeConfig.imagePath;
+        
     return (
         <div  id="projeto"  className={`md:border md:border-amber-500 md:p-6 ${className || ""}`}>
         
