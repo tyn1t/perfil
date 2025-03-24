@@ -9,7 +9,7 @@ interface CardProdutoProps {
 
 export function CardProjcts({ className}: CardProdutoProps)  {
     return (
-        <div className={`border border-amber-500 p-6 ${className || ""}`}>
+        <div  id="projeto"  className={`md:border md:border-amber-500 md:p-6 ${className || ""}`}>
         
             <div className="text-center font-bold text-3xl mx-auto my-8">
                 <h2>Projetos</h2>
@@ -17,7 +17,7 @@ export function CardProjcts({ className}: CardProdutoProps)  {
 
             <div className="flex flex-wrap justify-center gap-6">
     
-            <div className="border border-gray-300 rounded-lg p-4 shadow-lg max-w-xs">
+            <div  className="border border-gray-300 rounded-lg p-4 shadow-lg max-w-xs">
                 <Link href="https://tyn1t.github.io/github-pages/" target="_blank">
                     <h1 className="text-xl font-semibold text-center mb-4">
                         Landing Page de Pet Shop

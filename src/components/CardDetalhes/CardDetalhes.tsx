@@ -22,19 +22,18 @@ const logos = [
 
 export function CardDetalhes ({ className, ...props }: CardProps) {
     return (
-        <div>
-        <Card className={cn("w-40", className)} {...props}>
+        <Card className={cn("w-36 md:w-40", className)} {...props}>
             <CardHeader>
                 <CardTitle>Habilidades </CardTitle>
             </CardHeader>
-            <CardContent className="grid  gap-4">
+            <CardContent className="grid  gap-2">
                 {logos.map((log) => 
                     (<div key={log.id} className="flex items-center gap-2">
                         <Image
                             src={log.src}
                             alt={log.name}
-                            width={30}
-                            height={30}
+                            width={25}
+                            height={25}
                         className="object-cover"
                         />
                         <CardTitle className="hover:text-amber-200">{log.name}</CardTitle>
@@ -43,6 +42,5 @@ export function CardDetalhes ({ className, ...props }: CardProps) {
                 
             </CardContent>
         </Card>
-    </div>
     )
 }

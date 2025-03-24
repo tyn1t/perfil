@@ -5,13 +5,12 @@ export default function Footer() {
             <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
             
             {/* Logo ou Nome */}
-            <div className="text-lg font-semibold">Minha Empresa</div>
     
             {/* Links de Navegação */}
-            <nav className="flex gap-6 mt-4 md:mt-0">
-                <a href="#" className="hover:text-amber-400 transition">Sobre</a>
-                <a href="#" className="hover:text-amber-400 transition">Contato</a>
-                <a href="#" className="hover:text-amber-400 transition">Suporte</a>
+            <nav className="flex gap-6 mx-auto mt-4 md:mt-0">
+                <a href="#sobre" className="hover:text-amber-400 transition">Sobre</a>
+                <a href="#contado" className="hover:text-amber-400 transition">Contato</a>
+                <a href="#projeto" className="hover:text-amber-400 transition">Projeto</a>
             </nav>
     
             {/* Redes Sociais */}
@@ -29,8 +28,8 @@ export default function Footer() {
             </div>
     
             {/* Direitos Autorais */}
-            <div className="text-center text-sm text-gray-400 mt-6">
-            © {new Date().getFullYear()} Minha Empresa. Todos os direitos reservados.
+            <div className="text-center  text-sm text-gray-400 mt-6">
+            © {new Date().getFullYear()} tyn1t. Todos os direitos reservados.
             </div>
         </footer>
     );

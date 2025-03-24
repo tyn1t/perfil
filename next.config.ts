@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig: import('next').NextConfig = {
-  basePath: '/github-pages',
-  assetPrefix: '/github-pages/',
+  basePath: '/perfil',
+  assetPrefix: '/perfil/',
   output: 'export',
   images: {
     domains: ["tyn1t.github.io"],
