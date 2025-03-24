@@ -11,11 +11,13 @@ interface CardProps {
 
 
 export function CardCantado ({ className, ...props }: CardProps) {
+    
+    const apiUrl = process.env.PUBLIC;
 
     const contados = [
-        {id:0, log:"/icons8-github-100.svg", name:"GitHub", url:"https://github.com/tyn1t", target:"_blank"},
-        {id:1, log:"/whatsapp.png", name:"WhatsApp", url:"tel:+5592992192528"},
-        {id:2, log:"/gmail.png"  ,name:"Mail", url:"#"},
+        {id:0, log:`${apiUrl}/icons8-github-100.svg`, name:"GitHub", url:"https://github.com/tyn1t", target:"_blank"},
+        {id:1, log:`${apiUrl}/whatsapp.png`, name:"WhatsApp", url:"tel:+5592992192528"},
+        {id:2, log:`${apiUrl}/gmail.png`, name:"Mail", url:"#"},
     ]
 
     return (

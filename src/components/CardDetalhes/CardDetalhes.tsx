@@ -13,14 +13,18 @@ interface CardProps {
     className: string;
 }
 
+const apiUrl = process.env.PUBLIC;
+
 const logos = [
-    {id:0, name:"Javascript", src:"/java-script.png",},
-    {id:1, name:"Pythons", src:"/python.png",},
-    {id:2, name:"Django", src:"/django.png" , },
-    {id:3, name:"Next", src:"/Alternative.svg", },
+    {id:0, name:"Javascript", src:`${apiUrl}/java-script.png`,},
+    {id:1, name:"Pythons", src: `${apiUrl}/python.png`,},
+    {id:2, name:"Django", src:`${apiUrl}/django.png` , },
+    {id:3, name:"Next", src:`${apiUrl}/Alternative.svg`, },
 ]
 
 export function CardDetalhes ({ className, ...props }: CardProps) {
+
+
     return (
         <Card className={cn("w-36 md:w-40", className)} {...props}>
             <CardHeader>

@@ -8,6 +8,9 @@ interface CardProdutoProps {
 
 
 export function CardProjcts({ className}: CardProdutoProps)  {
+
+    const apiUrl = process.env.PUBLIC; 
+    
     return (
         <div  id="projeto"  className={`md:border md:border-amber-500 md:p-6 ${className || ""}`}>
         
@@ -24,7 +27,7 @@ export function CardProjcts({ className}: CardProdutoProps)  {
                     </h1>
                     <div className="relative w-32 h-40 mx-auto">
                         <Image 
-                        src="/petS.png"
+                        src={`${apiUrl}/petS.png`}
                         alt="Landing Page de Pet Shop"
                         fill
                         className="object-cover"
