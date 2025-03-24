@@ -9,7 +9,9 @@ interface CardProdutoProps {
 
 
 export function CardProjcts({ className}: CardProdutoProps)  {
-        
+    
+    const imgPath = process.env.NEXT_PUBLIC_IMAGE_PATH
+
     return (
         <div  id="projeto"  className={`md:border md:border-amber-500 md:p-6 ${className || ""}`}>
         
@@ -26,7 +28,7 @@ export function CardProjcts({ className}: CardProdutoProps)  {
                     </h1>
                     <div className="relative w-32 h-40 mx-auto">
                         <Image 
-                        src={"/perfil/dog-3431913_640.jpg"}
+                        src={`${imgPath}/dog-3431913_640.jpg`}
                         alt="Landing Page de Pet Shop"
                         fill
                         className="object-cover"
