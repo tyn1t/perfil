@@ -15,9 +15,9 @@ export function CardCantado ({ className, ...props }: CardProps) {
     const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;
 
     const contados = [
-        {id:0, log:`${apiUrl}/icons8-github-100.svg`, name:"GitHub", url:"https://github.com/tyn1t", target:"_blank"},
-        {id:1, log:`${apiUrl}/whatsapp.png`, name:"WhatsApp", url:"tel:+5592992192528"},
-        {id:2, log:`${apiUrl}/gmail.png`, name:"Mail", url:"#"},
+        {id:0, log:"/perfil/icons8-github-100.svg", name:"GitHub", url:"https://github.com/tyn1t", target:"_blank"},
+        {id:1, log:"/perfil/whatsapp.png", name:"WhatsApp", url:"tel:+5592992192528"},
+        {id:2, log:"/perfil/gmail.png", name:"Mail", url:"#"},
     ]
 
     return (

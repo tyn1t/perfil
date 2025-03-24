@@ -13,13 +13,13 @@ interface CardProps {
     className: string;
 }
 
-const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;;
+// const apiUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;;
 
 const logos = [
-    {id:0, name:"Javascript", src:`${apiUrl}/java-script.png`,},
+    {id:0, name:"Javascript", src:"/perfil/java-script.png",},
     {id:1, name:"Pythons", src: "/perfil/python.png",},
-    {id:2, name:"Django", src:`${apiUrl}/django.png` , },
-    {id:3, name:"Next", src:`${apiUrl}/Alternative.svg`, },
+    {id:2, name:"Django", src:"/perfil/django.png" , },
+    {id:3, name:"Next", src:"/perfil//Alternative.svg", },
 ]
 
 export function CardDetalhes ({ className, ...props }: CardProps) {
